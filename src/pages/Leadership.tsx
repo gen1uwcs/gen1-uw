@@ -5,6 +5,7 @@ import { Linkedin, Mail, User } from "lucide-react";
 const leaders = [
   {
     name: "Czarin Dela Cruz",
+    image: "Czarin.png",
     role: "Chair",
     pronouns: "she/her",
     major: "Computer Science & Data Science",
@@ -16,6 +17,7 @@ const leaders = [
   },
   {
     name: "Deetya Kamat",
+    image: "Deetya.png",
     role: "Vice Chair",
     pronouns: "she/her",
     major: "Computer Science, Minor in Business Administration",
@@ -27,6 +29,7 @@ const leaders = [
   },
   {
     name: "Raghavi Putluri",
+    image: "Raghavi.png",
     role: "Secretary",
     pronouns: "she/her",
     major: "Computer Science",
@@ -38,6 +41,7 @@ const leaders = [
   },
   {
     name: "Krish Doshi",
+    image: "Krish.png",
     role: "Student Relations",
     pronouns: "he/him",
     major: "Computer Science + Statistics (Data Science), Minor in Business Administration and Music",
@@ -49,6 +53,7 @@ const leaders = [
   },
   {
     name: "David Guzman Valente",
+    image: "David.png",
     role: "Media Director",
     pronouns: "he/him",
     major: "Computer Science",
@@ -60,6 +65,7 @@ const leaders = [
   },
   {
     name: "Kevin Kim",
+    image: "Kevin.png",
     role: "Public Relations",
     pronouns: "he/him",
     major: "Computer Science + Economics, Minor in Entrepreneurship",
@@ -71,6 +77,7 @@ const leaders = [
   },
   {
     name: "Vanya Jain",
+    image: "Vanya.png",
     role: "Graphics Director",
     pronouns: "she/her",
     major: "Computer Science",
@@ -82,6 +89,7 @@ const leaders = [
   },
   {
     name: "Gordon Huang",
+    image: "Gordon.png",
     role: "Treasurer",
     pronouns: "he/him",
     major: "Computer Science, Minor in Data Science",
@@ -93,6 +101,7 @@ const leaders = [
   },
   {
     name: "Christy Nguyen",
+    image: "Christy.png",
     role: "Media Director",
     pronouns: "she/her",
     major: "Computer Science",
@@ -104,6 +113,7 @@ const leaders = [
   },
   {
     name: "Mira Lee",
+    image: "Mira.png",
     role: "Public Relations",
     pronouns: "she/her",
     major: "Computer Science",
@@ -115,6 +125,7 @@ const leaders = [
   },
   {
     name: "Becky Jiang",
+    image: "Becky.png",
     role: "GEN1ntern",
     pronouns: "she/her",
     major: "Computer Science",
@@ -126,6 +137,7 @@ const leaders = [
   },
   {
     name: "Raiden Santos",
+    image: "Raiden.png",
     role: "GEN1ntern",
     pronouns: "he/him",
     major: "Computer Science + Philosophy",
@@ -137,6 +149,7 @@ const leaders = [
   },
   {
     name: "Michael Lin",
+    image: "Michael.png",
     role: "GEN1ntern",
     pronouns: "he/him",
     major: "Computer Science",
@@ -175,9 +188,13 @@ const Leadership = () => {
                   key={leader.name}
                   className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-xl transition-all"
                 >
-                  {/* Photo Placeholder */}
-                  <div className="w-32 h-32 rounded-full bg-secondary border-4 border-lavender/50 flex items-center justify-center mb-5 mx-auto group-hover:scale-105 group-hover:border-primary/50 transition-all overflow-hidden">
-                    <User className="w-16 h-16 text-muted-foreground/50" />
+                  {/* Officer Photo */}
+                  <div className="w-32 h-32 rounded-full bg-secondary border-4 border-lavender/50 mb-5 mx-auto group-hover:scale-105 group-hover:border-primary/50 transition-all overflow-hidden">
+                    <img
+                      src={`/leadership-images/${leader.image}`}
+                      alt={leader.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   
                   <div className="text-center">
