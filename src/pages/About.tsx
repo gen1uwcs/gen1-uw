@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
-import { Heart, Target, Lightbulb, Users } from "lucide-react";
+import { Heart, Target, Lightbulb, Users, Image } from "lucide-react";
 
 const values = [
   {
@@ -47,23 +47,51 @@ const About = () => {
           </div>
         </section>
 
+        {/* Photo Gallery Banner */}
+        <section className="py-12 bg-background">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[1, 2, 3, 4].map((i) => (
+                <div
+                  key={i}
+                  className="aspect-square rounded-2xl bg-secondary border border-border flex items-center justify-center overflow-hidden"
+                >
+                  <div className="text-center p-4">
+                    <Image className="w-8 h-8 text-muted-foreground/50 mx-auto mb-2" />
+                    <p className="text-xs text-muted-foreground">Photo {i}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Mission */}
         <section className="py-24 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto text-center">
-              <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-                Our Mission
-              </span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-                Empowering First-Gen Students to Succeed
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                GEN1 is dedicated to creating a supportive community for
-                first-generation college students in computer science and
-                engineering at the University of Washington. We understand that
-                being the first in your family to attend college comes with unique
-                challenges, and we're here to help you navigate them.
-              </p>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+                  Our Mission
+                </span>
+                <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                  Empowering First-Gen Students to Succeed
+                </h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  GEN1 is dedicated to creating a supportive community for
+                  first-generation college students in computer science and
+                  engineering at the University of Washington. We understand that
+                  being the first in your family to attend college comes with unique
+                  challenges, and we're here to help you navigate them.
+                </p>
+              </div>
+              <div className="aspect-[4/3] rounded-2xl bg-secondary border border-border flex items-center justify-center">
+                <div className="text-center p-8">
+                  <Image className="w-12 h-12 text-muted-foreground/50 mx-auto mb-3" />
+                  <p className="text-sm text-muted-foreground">GEN1 Community Photo</p>
+                  <p className="text-xs text-muted-foreground/70 mt-1">Upload to replace</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -86,7 +114,7 @@ const About = () => {
                   key={value.title}
                   className="p-8 rounded-2xl bg-card border border-border"
                 >
-                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
+                  <div className="w-14 h-14 rounded-xl bg-gold/20 flex items-center justify-center mb-6">
                     <value.icon className="w-7 h-7 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground mb-3">
