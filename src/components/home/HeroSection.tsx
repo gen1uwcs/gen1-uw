@@ -92,22 +92,30 @@ export const HeroSection = () => {
             </div>
           </div>
 
-          {/* Photo Placeholder */}
+          {/* Hero Image */}
           <div className="hidden lg:block animate-fade-in" style={{ animationDelay: "0.5s" }}>
             <div className="relative">
-              <div className="aspect-[4/3] rounded-3xl bg-background/20 backdrop-blur-sm border border-primary-foreground/20 flex items-center justify-center overflow-hidden">
-                <div className="text-center p-8">
-                  <Image className="w-16 h-16 text-primary-foreground/50 mx-auto mb-4" />
-                  <p className="text-primary-foreground/70 text-lg">GEN1 Community Photo</p>
-                  <p className="text-primary-foreground/50 text-sm mt-2">Upload to replace</p>
-                </div>
-              </div>
+              <img 
+                src="public/general-images/google.png" 
+                alt="GEN1 Community"
+                className="aspect-[4/3] rounded-3xl object-cover border border-primary-foreground/20"
+              />
               {/* Decorative smaller photos */}
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 rounded-2xl bg-gold/30 backdrop-blur-sm border border-primary-foreground/10 flex items-center justify-center">
+              <div className="absolute -bottom-20 -left-20 w-48 h-48 rounded-2xl bg-gold/30 backdrop-blur-sm border border-primary-foreground/10 flex items-center justify-center">
                 <Image className="w-8 h-8 text-primary-foreground/40" />
+                <img 
+                  src="public/general-images/grad.jpg" 
+                  alt="GEN1 Event"
+                  className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+                />
               </div>
-              <div className="absolute -top-4 -right-4 w-24 h-24 rounded-xl bg-lavender/40 backdrop-blur-sm border border-primary-foreground/10 flex items-center justify-center">
+              <div className="absolute -top-20 -right-20 w-48 h-48 rounded-xl bg-lavender/40 backdrop-blur-sm border border-primary-foreground/10 flex items-center justify-center">
                 <Image className="w-6 h-6 text-primary-foreground/40" />
+                <img 
+                  src="public/general-images/amy.jpeg" 
+                  alt="GEN1 Event"
+                  className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+                />
               </div>
             </div>
           </div>
