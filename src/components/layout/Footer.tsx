@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 import { Instagram, Linkedin, Facebook, Mail } from "lucide-react";
 
 const socialLinks = [
-  { name: "Instagram", icon: Instagram, href: "https://instagram.com" },
-  { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com" },
-  { name: "Facebook", icon: Facebook, href: "https://facebook.com" },
+  { name: "Instagram", icon: Instagram, href: "https://instagram.com/gen1cse" },
+  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/gen1-uw" },
   { name: "Email", icon: Mail, href: "mailto:gen1@cs.washington.edu" },
 ];
 
