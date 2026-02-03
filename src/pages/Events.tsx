@@ -1,7 +1,8 @@
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
-import { Calendar, MapPin, Clock, ExternalLink } from "lucide-react";
+import { Calendar, MapPin, Clock, ExternalLink, Image } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const upcomingEvents = [
   {
@@ -110,42 +111,54 @@ const Events = () => {
                   key={event.title}
                   className="p-6 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-lg transition-all"
                 >
-                  <div className="flex flex-col lg:flex-row lg:items-center gap-6">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-3">
-                        <span
-                          className={`px-3 py-1 rounded-full text-xs font-medium ${getTypeColor(
-                            event.type
-                          )}`}
-                        >
-                          {event.type}
-                        </span>
-                      </div>
-                      <h3 className="text-xl font-semibold text-foreground mb-2">
-                        {event.title}
-                      </h3>
-                      <p className="text-muted-foreground mb-4">
-                        {event.description}
-                      </p>
-                      <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
-                        <div className="flex items-center gap-2">
-                          <Calendar className="w-4 h-4" />
-                          {event.date}
+                  <div className="flex flex-col lg:flex-row gap-6">
+                    {/* Event Flyer Placeholder */}
+                    <div className="lg:w-48 flex-shrink-0">
+                      <AspectRatio ratio={4 / 5} className="bg-muted rounded-xl border-2 border-dashed border-border overflow-hidden">
+                        <div className="w-full h-full flex flex-col items-center justify-center text-muted-foreground">
+                          <Image className="w-10 h-10 mb-2" />
+                          <span className="text-xs text-center px-2">Event Flyer</span>
                         </div>
-                        <div className="flex items-center gap-2">
-                          <Clock className="w-4 h-4" />
-                          {event.time}
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <MapPin className="w-4 h-4" />
-                          {event.location}
-                        </div>
-                      </div>
+                      </AspectRatio>
                     </div>
-                    <Button className="gradient-cta border-0">
-                      RSVP
-                      <ExternalLink className="ml-2 w-4 h-4" />
-                    </Button>
+                    
+                    <div className="flex-1 flex flex-col lg:flex-row lg:items-center gap-6">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-3">
+                          <span
+                            className={`px-3 py-1 rounded-full text-xs font-medium ${getTypeColor(
+                              event.type
+                            )}`}
+                          >
+                            {event.type}
+                          </span>
+                        </div>
+                        <h3 className="text-xl font-semibold text-foreground mb-2">
+                          {event.title}
+                        </h3>
+                        <p className="text-muted-foreground mb-4">
+                          {event.description}
+                        </p>
+                        <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+                          <div className="flex items-center gap-2">
+                            <Calendar className="w-4 h-4" />
+                            {event.date}
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <Clock className="w-4 h-4" />
+                            {event.time}
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <MapPin className="w-4 h-4" />
+                            {event.location}
+                          </div>
+                        </div>
+                      </div>
+                      <Button className="gradient-cta border-0 self-start lg:self-center">
+                        RSVP
+                        <ExternalLink className="ml-2 w-4 h-4" />
+                      </Button>
+                    </div>
                   </div>
                 </div>
               ))}
