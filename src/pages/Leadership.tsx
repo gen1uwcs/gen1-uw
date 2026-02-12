@@ -13,7 +13,7 @@ const leaders = [
     favClass: "CSE 340",
     favLang: "Java",
     askAbout: "Current watchlist + Cafes",
-    funFact: "Dream travel destination: Tokyo",
+    funFact: "Dream Travel Destination: Tokyo",
   },
   {
     name: "Deetya Kamat",
@@ -25,7 +25,7 @@ const leaders = [
     favClass: "CSE 333",
     favLang: "Python",
     askAbout: "My latest read!",
-    funFact: "Dream travel destination: Edinburgh",
+    funFact: "Dream Travel Destination: Edinburgh",
   },
   {
     name: "Raghavi Putluri",
@@ -37,7 +37,7 @@ const leaders = [
     favClass: "CSE 331",
     favLang: "Python",
     askAbout: "Study spots @ UW",
-    funFact: "Dream travel destination: Barcelona",
+    funFact: "Dream Travel Destination: Barcelona",
   },
   {
     name: "Krish Doshi",
@@ -49,7 +49,7 @@ const leaders = [
     favClass: "CSE 332",
     favLang: "Java + Python",
     askAbout: "Husky Marching Band",
-    funFact: "Dream travel destination: Japan",
+    funFact: "Dream Travel Destination: Japan",
   },
   {
     name: "David Guzman Valente",
@@ -73,7 +73,7 @@ const leaders = [
     favClass: "CSE 344",
     favLang: "Java",
     askAbout: "Investments, Korea",
-    funFact: "I can whistle any song",
+    funFact: "Fun Fact: I can whistle any song",
   },
   {
     name: "Vanya Jain",
@@ -97,7 +97,7 @@ const leaders = [
     favClass: "CSE 473",
     favLang: "Java",
     askAbout: "My study abroad in Japan",
-    funFact: "Ultimate Comfort food: Miso ramen + soft boiled egg",
+    funFact: "Ultimate Comfort Food: Miso ramen + soft boiled egg",
   },
   {
     name: "Christy Nguyen",
@@ -121,7 +121,7 @@ const leaders = [
     favClass: "CSE 332",
     favLang: "Python",
     askAbout: "Hikes in WA",
-    funFact: "Ultimate Comfort food: Boiling Point",
+    funFact: "Ultimate Comfort Food: Boiling Point",
   },
   {
     name: "Becky Jiang",
@@ -133,7 +133,7 @@ const leaders = [
     favClass: "CSE 311",
     favLang: "Java",
     askAbout: "Hikes in WA, Tennis",
-    funFact: "Ultimate Comfort food: Tomato Egg Stir-fry",
+    funFact: "Ultimate Comfort Food: Tomato Egg Stir-fry",
   },
   {
     name: "Raiden Santos",
@@ -145,7 +145,7 @@ const leaders = [
     favClass: "CSE 331",
     favLang: "Python",
     askAbout: "Billiards, Boxing",
-    funFact: "I have a life-sized Bruce Lee statue",
+    funFact: "Fun Fact: I have a life-sized Bruce Lee statue",
   },
   {
     name: "Michael Lin",
@@ -157,7 +157,7 @@ const leaders = [
     favClass: "CSE 121",
     favLang: "Python",
     askAbout: "Food spots @ UW",
-    funFact: "I've been to 23 countries",
+    funFact: "Fun Fact: I've been to 23 countries",
   },
 ];
 
@@ -182,14 +182,15 @@ const Leadership = () => {
         {/* Leadership Grid */}
         <section className="py-24 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
               {leaders.map((leader) => (
                 <div
                   key={leader.name}
                   className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-xl transition-all"
                 >
                   {/* Officer Photo */}
-                  <div className="w-32 h-32 rounded-full bg-secondary border-4 border-lavender/50 mb-5 mx-auto group-hover:scale-105 group-hover:border-primary/50 transition-all overflow-hidden">
+                  <div className="w-44 h-44 rounded-full bg-secondary border-4 border-lavender/50 mb-5 mx-auto group-hover:scale-105 group-hover:border-primary/50 transition-all overflow-hidden">
                     <img
                       src={`/leadership-images/${leader.image}`}
                       alt={leader.name}
@@ -198,38 +199,39 @@ const Leadership = () => {
                   </div>
                   
                   <div className="text-center">
-                    <h3 className="text-lg font-semibold text-foreground mb-1">
+                    <h3 className="text-xl font-semibold text-foreground mb-1">
+
                       {leader.name}
                     </h3>
-                    <p className="text-primary font-medium text-sm mb-1">{leader.role}</p>
-                    <p className="text-xs text-muted-foreground mb-3">
+                    <p className="text-primary font-medium text-base mb-1">{leader.role}</p>
+                    <p className="text-sm text-muted-foreground mb-3">
                       {leader.pronouns}
                     </p>
                     
                     <div className="space-y-2 text-left bg-secondary/50 rounded-lg p-3 mb-4">
-                      <p className="text-xs">
+                      <p className="text-sm">
                         <span className="font-medium text-foreground">Major:</span>{" "}
                         <span className="text-muted-foreground">{leader.major}</span>
                       </p>
-                      <p className="text-xs">
+                      <p className="text-sm">
                         <span className="font-medium text-foreground">Year:</span>{" "}
                         <span className="text-muted-foreground">{leader.year}</span>
                       </p>
-                      <p className="text-xs">
+                      <p className="text-sm">
                         <span className="font-medium text-foreground">Fav Class:</span>{" "}
                         <span className="text-muted-foreground">{leader.favClass}</span>
                       </p>
-                      <p className="text-xs">
+                      <p className="text-sm">
                         <span className="font-medium text-foreground">Fav Language:</span>{" "}
                         <span className="text-muted-foreground">{leader.favLang}</span>
                       </p>
-                      <p className="text-xs">
+                      <p className="text-sm">
                         <span className="font-medium text-foreground">Ask Me About:</span>{" "}
                         <span className="text-muted-foreground">{leader.askAbout}</span>
                       </p>
                     </div>
-                    
-                    <p className="text-xs text-accent font-medium italic mb-4">
+
+                    <p className="text-sm text-accent font-medium italic mb-4">
                       {leader.funFact}
                     </p>
                     
