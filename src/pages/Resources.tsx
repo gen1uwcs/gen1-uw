@@ -42,7 +42,7 @@ const resourceCategories = [
     resources: [
       {
         name: "CSE Tutoring",
-        link: "https://www.cs.washington.edu/students/resources/tutoring",
+        link: "https://www.cs.washington.edu/academics/undergraduate/student-resources/study-center/",
       },
       {
         name: "CLUE Study Sessions",
@@ -50,7 +50,7 @@ const resourceCategories = [
       },
       {
         name: "Writing Center",
-        link: "https://www.washington.edu/owrc/",
+        link: "https://depts.washington.edu/owrcweb/wordpress/",
       },
       {
         name: "Undergraduate Research",
@@ -92,7 +92,7 @@ const resourceCategories = [
       },
       {
         name: "Hall Health Center",
-        link: "https://wellbeing.uw.edu/medical/",
+        link: "https://wellbeing.uw.edu/husky-health/",
       },
       {
         name: "UW Food Pantry",
@@ -100,7 +100,7 @@ const resourceCategories = [
       },
       {
         name: "Disability Resources",
-        link: "https://drs.washington.edu/",
+        link: "https://depts.washington.edu/uwdrs/",
       },
     ],
   },
@@ -115,11 +115,11 @@ const resourceCategories = [
       },
       {
         name: "McNair Scholars Program",
-        link: "https://grad.uw.edu/diversity/programs/mcnair-scholars-program/",
+        link: "https://www.washington.edu/omad/gsps/trio-mcnair-scholars/",
       },
       {
         name: "TRIO Programs",
-        link: "https://trio.uw.edu/",
+        link: "https://depts.washington.edu/omadcs/trio-sss/about-trio-sss/",
       },
       {
         name: "I'm First Resources",
@@ -134,15 +134,15 @@ const resourceCategories = [
     resources: [
       {
         name: "Allen School Student Orgs",
-        link: "https://www.cs.washington.edu/students/orgs",
+        link: "https://www.cs.washington.edu/academics/undergraduate/student-life/student-organizations/",
       },
       {
         name: "HUB Student Activities",
-        link: "https://hub.washington.edu/involvement/",
+        link: "https://hub.washington.edu/get-involved/sao/",
       },
       {
-        name: "Diversity in CS",
-        link: "https://www.cs.washington.edu/diversity",
+        name: "Diversity at UW",
+        link: "https://www.washington.edu/diversity/",
       },
       {
         name: "ACM-W UW Chapter",

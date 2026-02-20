@@ -10,19 +10,19 @@ const socialLinks = [
   {
     name: "Instagram",
     icon: Instagram,
-    href: "https://instagram.com",
+    href: "https://instagram.com/gen1cse",
     handle: "@gen1uwcse",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "https://linkedin.com",
+    href: "https://linkedin.com/in/gen1-uw/",
     handle: "GEN1 at UW CSE",
   },
   {
     name: "Facebook",
     icon: Facebook,
-    href: "https://facebook.com",
+    href: "https://facebook.com/GEN1UW",
     handle: "GEN1 UW CSE",
   },
 ];
