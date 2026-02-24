@@ -1,44 +1,23 @@
 import { 
   GraduationCap, 
-  Calendar, 
   Users, 
-  Briefcase, 
-  Building, 
-  FileText, 
-  Handshake, 
-  Star 
+  Star,
+  DollarSign
 } from "lucide-react";
+
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const resources = [
   {
-    icon: FileText,
-    title: "FAFSA Workshops",
-    description: "Get help navigating financial aid applications and deadlines.",
-  },
-  {
-    icon: Calendar,
-    title: "First-Gen Week",
+    icon: DollarSign,
+    title: "Financial Aid",
     description: "Annual celebration highlighting first-gen student achievements.",
   },
   {
     icon: GraduationCap,
     title: "Academic Support",
     description: "Tutoring, study groups, and academic mentorship programs.",
-  },
-  {
-    icon: Briefcase,
-    title: "Industry Workshops",
-    description: "Learn about career paths and industry expectations.",
-  },
-  {
-    icon: Building,
-    title: "Company Panels",
-    description: "Connect with tech companies and learn from professionals.",
-  },
-  {
-    icon: FileText,
-    title: "Resume Prep",
-    description: "Get your resume reviewed and practice interview skills.",
   },
   {
     icon: Users,
@@ -54,7 +33,7 @@ const resources = [
 
 export const ResourcesSection = () => {
   return (
-    <section className="py-24 bg-secondary/50">
+    <section className="py-12 bg-secondary/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
@@ -64,12 +43,15 @@ export const ResourcesSection = () => {
             Resources to Help You Thrive
           </h2>
           <p className="text-lg text-muted-foreground">
-            Join GEN1 for resources to help you navigate through college and beyond.
+            Explore workshops, academic support, career preparation, and community events 
+            designed to help you succeed at the Allen School and beyond. Check out all of our 
+            resources on our resources page.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {resources.map((resource, index) => (
+          <Link to="/resources">
             <div
               key={resource.title}
               className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300"
@@ -85,7 +67,15 @@ export const ResourcesSection = () => {
                 {resource.description}
               </p>
             </div>
+            </Link>
           ))}
+        </div>
+          <div className="text-center mt-7">
+          <Link to="/resources">
+            <Button size="lg" className="rounded-xl px-8">
+              View All Resources
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
