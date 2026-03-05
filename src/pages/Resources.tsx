@@ -41,8 +41,8 @@ const resourceCategories = [
     description: "Get help with your coursework and academic success.",
     resources: [
       {
-        name: "CSE Tutoring",
-        link: "https://www.cs.washington.edu/academics/undergraduate/student-resources/study-center/",
+        name: "CSE Peer Advising",
+        link: "https://www.cs.washington.edu/academics/undergraduate/advising/peer-advising/",
       },
       {
         name: "CLUE Study Sessions",
@@ -55,6 +55,10 @@ const resourceCategories = [
       {
         name: "Undergraduate Research",
         link: "https://www.washington.edu/undergradresearch/",
+      },
+      {
+        name: "CSE Research Opportunities",
+        link: "https://www.cs.washington.edu/academics/undergraduate/research-opportunities/",
       },
     ],
   },
@@ -143,10 +147,6 @@ const resourceCategories = [
       {
         name: "Diversity at UW",
         link: "https://www.washington.edu/diversity/",
-      },
-      {
-        name: "ACM-W UW Chapter",
-        link: "https://acmw.cs.washington.edu/",
       },
     ],
   },

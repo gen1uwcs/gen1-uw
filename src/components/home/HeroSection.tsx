@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, Heart, Sparkles, Image } from "lucide-react";
+import { ArrowRight, Users, Heart, Sparkles } from "lucide-react";
 
 export const HeroSection = () => {
   return (
@@ -96,25 +96,23 @@ export const HeroSection = () => {
           <div className="hidden lg:block animate-fade-in" style={{ animationDelay: "0.5s" }}>
             <div className="relative">
               <img 
-                src="public/general-images/google.png" 
+                src="/general-images/google.png" 
                 alt="GEN1 Community"
                 className="aspect-[4/3] rounded-3xl object-cover border border-primary-foreground/20"
               />
               {/* Decorative smaller photos */}
-              <div className="absolute -bottom-20 -left-20 w-48 h-48 rounded-2xl bg-gold/30 backdrop-blur-sm border border-primary-foreground/10 flex items-center justify-center">
-                <Image className="w-8 h-8 text-primary-foreground/40" />
+              <div className="absolute -bottom-20 -left-20 w-48 h-48 rounded-2xl bg-gold/30 backdrop-blur-sm border border-primary-foreground/10 overflow-hidden">
                 <img 
-                  src="public/general-images/grad.jpg" 
+                  src="/general-images/grad.JPG" 
                   alt="GEN1 Event"
-                  className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+                  className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
-              <div className="absolute -top-20 -right-20 w-48 h-48 rounded-xl bg-lavender/40 backdrop-blur-sm border border-primary-foreground/10 flex items-center justify-center">
-                <Image className="w-6 h-6 text-primary-foreground/40" />
+              <div className="absolute -top-20 -right-20 w-48 h-48 rounded-xl bg-lavender/40 backdrop-blur-sm border border-primary-foreground/10 overflow-hidden">
                 <img 
-                  src="public/general-images/amy.jpeg" 
+                  src="/general-images/amy.jpeg" 
                   alt="GEN1 Event"
-                  className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+                  className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
             </div>
