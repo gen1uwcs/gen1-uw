@@ -50,7 +50,7 @@ const resourceCategories = [
       },
       {
         name: "Writing Center",
-        link: "https://www.washington.edu/owrc/",
+        link: "https://depts.washington.edu/owrcweb/wordpress/",
       },
       {
         name: "Undergraduate Research",
@@ -96,7 +96,7 @@ const resourceCategories = [
       },
       {
         name: "Hall Health Center",
-        link: "https://wellbeing.uw.edu/medical/",
+        link: "https://wellbeing.uw.edu/husky-health/",
       },
       {
         name: "UW Food Pantry",

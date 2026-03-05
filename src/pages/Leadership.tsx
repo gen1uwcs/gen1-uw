@@ -14,6 +14,8 @@ const leaders = [
     favLang: "Java",
     askAbout: "Current watchlist + Cafes",
     funFact: "Dream Travel Destination: Tokyo",
+    linkedIn: "czarindc",
+    email: "czarindc@cs.washington.edu"
   },
   {
     name: "Deetya Kamat",
@@ -26,6 +28,8 @@ const leaders = [
     favLang: "Python",
     askAbout: "My latest read!",
     funFact: "Dream Travel Destination: Edinburgh",
+    linkedIn: "deetya-kamat",
+    email: "deetyk@cs.washington.edu"
   },
   {
     name: "Raghavi Putluri",
@@ -38,6 +42,8 @@ const leaders = [
     favLang: "Python",
     askAbout: "Study spots @ UW",
     funFact: "Dream Travel Destination: Barcelona",
+    linkedIn: "raghavi-putluri",
+    email: "raghavip@cs.washington.edu"
   },
   {
     name: "Krish Doshi",
@@ -50,6 +56,8 @@ const leaders = [
     favLang: "Java + Python",
     askAbout: "Husky Marching Band",
     funFact: "Dream Travel Destination: Japan",
+    linkedIn: "kdoshi2",
+    email: "kdoshi2@cs.washington.edu"
   },
   {
     name: "David Guzman Valente",
@@ -62,6 +70,8 @@ const leaders = [
     favLang: "C++, C#",
     askAbout: "Animes",
     funFact: "Favorite Song: Dile Que Tu Quieres by Ozuna",
+    linkedIn: "dguzval",
+    email: "dguzval2@uw.edu"
   },
   {
     name: "Kevin Kim",
@@ -74,6 +84,8 @@ const leaders = [
     favLang: "Java",
     askAbout: "Investments, Korea",
     funFact: "Fun Fact: I can whistle any song",
+    linkedIn: "kevkim27",
+    email: "kevi0201@cs.washington.edu"
   },
   {
     name: "Vanya Jain",
@@ -86,6 +98,8 @@ const leaders = [
     favLang: "Javascript",
     askAbout: "Music + Coffee",
     funFact: "Favorite TV Show: Severance",
+    linkedIn: "vanyajn",
+    email: "vanyaj@cs.washington.edu"
   },
   {
     name: "Gordon Huang",
@@ -98,6 +112,8 @@ const leaders = [
     favLang: "Java",
     askAbout: "My study abroad in Japan",
     funFact: "Ultimate Comfort Food: Miso ramen + soft boiled egg",
+    linkedIn: "gordondhuang",
+    email: "gdhua@cs.washington.edu"
   },
   {
     name: "Christy Nguyen",
@@ -110,6 +126,8 @@ const leaders = [
     favLang: "Typescript",
     askAbout: "The best view points",
     funFact: "Ultimate Comfort Food: Taco Time",
+    linkedIn: "christynguyen23",
+    email: "cnguy@uw.edu"
   },
   {
     name: "Mira Lee",
@@ -122,6 +140,8 @@ const leaders = [
     favLang: "Python",
     askAbout: "Hikes in WA",
     funFact: "Ultimate Comfort Food: Boiling Point",
+    linkedIn: "miracle-lee1",
+    email: "ml284@cs.washington.edu"
   },
   {
     name: "Becky Jiang",
@@ -134,6 +154,8 @@ const leaders = [
     favLang: "Java",
     askAbout: "Hikes in WA, Tennis",
     funFact: "Ultimate Comfort Food: Tomato Egg Stir-fry",
+    linkedIn: "beckyjiang",
+    email: "beckyj11@cs.washington.edu"
   },
   {
     name: "Raiden Santos",
@@ -146,6 +168,8 @@ const leaders = [
     favLang: "Python",
     askAbout: "Billiards, Boxing",
     funFact: "Fun Fact: I have a life-sized Bruce Lee statue",
+    linkedIn: "raidensantos",
+    email: "raidens@cs.washington.edu"
   },
   {
     name: "Michael Lin",
@@ -158,6 +182,8 @@ const leaders = [
     favLang: "Python",
     askAbout: "Food spots @ UW",
     funFact: "Fun Fact: I've been to 23 countries",
+    linkedIn: "michael-lin07",
+    email: "mlin36@cs.washington.edu"
   },
 ];
 
@@ -236,20 +262,26 @@ const Leadership = () => {
                     </p>
                     
                     <div className="flex justify-center gap-2">
-                      <a
-                        href="#"
-                        className="w-8 h-8 rounded-full bg-secondary hover:bg-primary/10 flex items-center justify-center transition-colors"
-                        aria-label="LinkedIn"
-                      >
-                        <Linkedin className="w-4 h-4 text-muted-foreground" />
-                      </a>
-                      <a
-                        href="#"
-                        className="w-8 h-8 rounded-full bg-secondary hover:bg-primary/10 flex items-center justify-center transition-colors"
-                        aria-label="Email"
-                      >
-                        <Mail className="w-4 h-4 text-muted-foreground" />
-                      </a>
+                      {leader.linkedIn && (
+                        <a
+                          href={`https://www.linkedin.com/in/${leader.linkedIn}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-8 h-8 rounded-full bg-secondary hover:bg-primary/10 flex items-center justify-center transition-colors"
+                          aria-label="LinkedIn"
+                        >
+                          <Linkedin className="w-4 h-4 text-muted-foreground" />
+                        </a>
+                      )}
+                      {leader.email && (
+                        <a
+                          href={`mailto:${leader.email}`}
+                          className="w-8 h-8 rounded-full bg-secondary hover:bg-primary/10 flex items-center justify-center transition-colors"
+                          aria-label="Email"
+                        >
+                          <Mail className="w-4 h-4 text-muted-foreground" />
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
