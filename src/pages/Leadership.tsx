@@ -15,7 +15,7 @@ const leaders = [
     askAbout: "Current watchlist + Cafes",
     funFact: "Dream Travel Destination: Tokyo",
     linkedIn: "czarindc",
-    email: "czarindc@gmail.com"
+    email: "czarindc@cs.washington.edu"
   },
   {
     name: "Deetya Kamat",
@@ -29,7 +29,7 @@ const leaders = [
     askAbout: "My latest read!",
     funFact: "Dream Travel Destination: Edinburgh",
     linkedIn: "deetya-kamat",
-    email: "dkamat1905@outlook.com"
+    email: "deetyk@cs.washington.edu"
   },
   {
     name: "Raghavi Putluri",
@@ -43,7 +43,7 @@ const leaders = [
     askAbout: "Study spots @ UW",
     funFact: "Dream Travel Destination: Barcelona",
     linkedIn: "raghavi-putluri",
-    email: "raghavi.putluri@outlook.com"
+    email: "raghavip@cs.washington.edu"
   },
   {
     name: "Krish Doshi",
@@ -57,7 +57,7 @@ const leaders = [
     askAbout: "Husky Marching Band",
     funFact: "Dream Travel Destination: Japan",
     linkedIn: "kdoshi2",
-    email: "krishpdoshi@gmail.com"
+    email: "kdoshi2@cs.washington.edu"
   },
   {
     name: "David Guzman Valente",
@@ -71,7 +71,7 @@ const leaders = [
     askAbout: "Animes",
     funFact: "Favorite Song: Dile Que Tu Quieres by Ozuna",
     linkedIn: "dguzval",
-    email: "davidguzmanvalente@gmail.com"
+    email: "dguzval2@uw.edu"
   },
   {
     name: "Kevin Kim",
@@ -85,7 +85,7 @@ const leaders = [
     askAbout: "Investments, Korea",
     funFact: "Fun Fact: I can whistle any song",
     linkedIn: "kevkim27",
-    email: "kevkim0201@gmail.com"
+    email: "kevi0201@cs.washington.edu"
   },
   {
     name: "Vanya Jain",
@@ -99,7 +99,7 @@ const leaders = [
     askAbout: "Music + Coffee",
     funFact: "Favorite TV Show: Severance",
     linkedIn: "vanyajn",
-    email: "vanyaj1011@gmail.com"
+    email: "vanyaj@cs.washington.edu"
   },
   {
     name: "Gordon Huang",
@@ -113,7 +113,7 @@ const leaders = [
     askAbout: "My study abroad in Japan",
     funFact: "Ultimate Comfort Food: Miso ramen + soft boiled egg",
     linkedIn: "gordondhuang",
-    email: "gordondhuang@gmail.com"
+    email: "gdhua@cs.washington.edu"
   },
   {
     name: "Christy Nguyen",
@@ -127,7 +127,7 @@ const leaders = [
     askAbout: "The best view points",
     funFact: "Ultimate Comfort Food: Taco Time",
     linkedIn: "christynguyen23",
-    email: "christynguyenss@gmail.com"
+    email: "cnguy@uw.edu"
   },
   {
     name: "Mira Lee",
@@ -141,7 +141,7 @@ const leaders = [
     askAbout: "Hikes in WA",
     funFact: "Ultimate Comfort Food: Boiling Point",
     linkedIn: "miracle-lee1",
-    email: ""
+    email: "ml284@cs.washington.edu"
   },
   {
     name: "Becky Jiang",
@@ -155,7 +155,7 @@ const leaders = [
     askAbout: "Hikes in WA, Tennis",
     funFact: "Ultimate Comfort Food: Tomato Egg Stir-fry",
     linkedIn: "beckyjiang",
-    email: ""
+    email: "beckyj11@cs.washington.edu"
   },
   {
     name: "Raiden Santos",
@@ -169,7 +169,7 @@ const leaders = [
     askAbout: "Billiards, Boxing",
     funFact: "Fun Fact: I have a life-sized Bruce Lee statue",
     linkedIn: "raidensantos",
-    email: ""
+    email: "raidens@cs.washington.edu"
   },
   {
     name: "Michael Lin",
@@ -183,7 +183,7 @@ const leaders = [
     askAbout: "Food spots @ UW",
     funFact: "Fun Fact: I've been to 23 countries",
     linkedIn: "michael-lin07",
-    email: "michaellin250@gmail.com"
+    email: "mlin36@cs.washington.edu"
   },
 ];
 
