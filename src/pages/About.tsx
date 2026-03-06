@@ -38,11 +38,12 @@ const About = () => {
         <section className="py-24 gradient-hero">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6">
-              About GEN1
+              Our Mission
             </h1>
-            <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-              Supporting first-generation college students in the Paul G. Allen
-              School of Computer Science & Engineering.
+            <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto">
+            GEN1 at the University of Washington aims to celebrate and support the Allen School’s 
+            vibrant and diverse first-generation community by providing resources and a community 
+            to ensure academic, professional, and personal success. 
             </p>
           </div>
         </section>
@@ -71,9 +72,6 @@ const About = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-                  Our Mission
-                </span>
                 <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
                   Empowering First-Gen Students to Succeed
                 </h2>
@@ -141,17 +139,22 @@ const About = () => {
               </h2>
               <div className="prose prose-lg text-muted-foreground">
                 <p className="leading-relaxed mb-6">
-                  A first-generation college student is typically defined as
-                  someone whose parents or guardians did not complete a
-                  four-year college degree. This includes students whose parents
-                  may have attended some college but didn't graduate, as well as
-                  those whose parents earned degrees outside the United States.
+                By definition, first-generation students are trailblazers; 
+                they are one of the first in their family to pursue a Bachelor's 
+                degree in the US. Many people are unaware of the first-gen community 
+                and the different experiences that these students face in contrast to 
+                their peers. As a club, we hope to make the community more visible and 
+                ensure that our members have a place to share their stories with other 
+                first-gen students. 
                 </p>
                 <p className="leading-relaxed">
-                  At GEN1, we welcome all students who identify with the
-                  first-gen experience. If you're unsure whether you qualify,
-                  we encourage you to reach out – you're likely more welcome than
-                  you think!
+                GEN1 hopes to not only celebrate our identity among our members, but to 
+                also provide resources - such as workshops and panels - dedicated to giving 
+                first-gen students extra tools for success. The issues faced by first-gen 
+                students at UW can be very different from those faced by the average student, 
+                and these experiences showcase the strength of our community. We aim to inspire 
+                one another to thrive in the realm of higher education, and we hope that you are 
+                excited to take part in celebrating first-gen students! 
                 </p>
               </div>
             </div>
