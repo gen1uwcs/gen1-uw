@@ -10,6 +10,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const resourceCategories = [
   {
@@ -220,7 +221,7 @@ const Resources = () => {
               connect you with the right resources.
             </p>
             <Button asChild className="gradient-cta border-0">
-              <a href="/contact">Contact Us</a>
+              <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
         </section>

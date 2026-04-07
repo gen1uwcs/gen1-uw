@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Heart, Sparkles } from "lucide-react";
 
 export const HeroSection = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background Gradient */}
@@ -96,21 +98,21 @@ export const HeroSection = () => {
           <div className="hidden lg:block animate-fade-in" style={{ animationDelay: "0.5s" }}>
             <div className="relative">
               <img 
-                src="/general-images/google.png" 
+                src={`${baseUrl}general-images/google.png`}
                 alt="GEN1 Community"
                 className="aspect-[4/3] rounded-3xl object-cover border border-primary-foreground/20"
               />
               {/* Decorative smaller photos */}
               <div className="absolute -bottom-20 -left-20 w-48 h-48 rounded-2xl bg-gold/30 backdrop-blur-sm border border-primary-foreground/10 overflow-hidden">
                 <img 
-                  src="/general-images/grad.JPG" 
+                  src={`${baseUrl}general-images/grad.JPG`}
                   alt="GEN1 Event"
                   className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
               <div className="absolute -top-20 -right-20 w-48 h-48 rounded-xl bg-lavender/40 backdrop-blur-sm border border-primary-foreground/10 overflow-hidden">
                 <img 
-                  src="/general-images/amy.jpeg" 
+                  src={`${baseUrl}general-images/amy.jpeg`}
                   alt="GEN1 Event"
                   className="w-full h-full object-cover rounded-2xl"
                 />

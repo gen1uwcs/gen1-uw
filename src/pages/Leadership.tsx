@@ -188,6 +188,8 @@ const leaders = [
 ];
 
 const Leadership = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -218,7 +220,7 @@ const Leadership = () => {
                   {/* Officer Photo */}
                   <div className="w-44 h-44 rounded-full bg-secondary border-4 border-lavender/50 mb-5 mx-auto group-hover:scale-105 group-hover:border-primary/50 transition-all overflow-hidden">
                     <img
-                      src={`/leadership-images/${leader.image}`}
+                      src={`${baseUrl}leadership-images/${leader.image}`}
                       alt={leader.name}
                       className="w-full h-full object-cover"
                     />
