@@ -62,6 +62,7 @@ export default {
         "light-blue": "hsl(var(--light-blue))",
         pink: "hsl(var(--pink))",
         lavender: "hsl(var(--lavender))",
+        coral: "hsl(var(--coral))",
       },
       borderRadius: {
         lg: "var(--radius)",

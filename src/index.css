@@ -48,6 +48,7 @@
     --light-blue: 225 75% 89%;
     --pink: 292 60% 73%;
     --lavender: 274 60% 71%;
+    --coral: 225 95% 81%;
 
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(292 60% 73%) 0%, hsl(274 60% 71%) 35%, hsl(40 95% 59%) 100%);
