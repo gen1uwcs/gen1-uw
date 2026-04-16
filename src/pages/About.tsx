@@ -30,6 +30,15 @@ const values = [
 ];
 
 const About = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+
+  const photos = [
+    { src: `${baseUrl}about-images/gamenight.jpeg`, alt: "Game night" },
+    { src: `${baseUrl}about-images/graduates.JPG`, alt: "Graduates at first gen grad" },
+    { src: `${baseUrl}about-images/tabling.jpg`, alt: "Ha Vi and EJ tabling" },
+    { src: `${baseUrl}about-images/uber.jpeg`, alt: "Uber event" },
+  ];
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -52,15 +61,17 @@ const About = () => {
         <section className="py-12 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[1, 2, 3, 4].map((i) => (
+              {photos.map((photo, i) => (
                 <div
                   key={i}
                   className="aspect-square rounded-2xl bg-secondary border border-border flex items-center justify-center overflow-hidden"
                 >
-                  <div className="text-center p-4">
-                    <Image className="w-8 h-8 text-muted-foreground/50 mx-auto mb-2" />
-                    <p className="text-xs text-muted-foreground">Photo {i}</p>
-                  </div>
+                  <img 
+                    src={photo.src} 
+                    alt={photo.alt} 
+                    className="w-full h-full object-cover rounded-2xl" 
+                    style ={{ objectPosition: "30% 20%" }}
+                  />
                 </div>
               ))}
             </div>
@@ -84,11 +95,11 @@ const About = () => {
                 </p>
               </div>
               <div className="aspect-[4/3] rounded-2xl bg-secondary border border-border flex items-center justify-center">
-                <div className="text-center p-8">
-                  <Image className="w-12 h-12 text-muted-foreground/50 mx-auto mb-3" />
-                  <p className="text-sm text-muted-foreground">GEN1 Community Photo</p>
-                  <p className="text-xs text-muted-foreground/70 mt-1">Upload to replace</p>
-                </div>
+                <img 
+                  src={`${baseUrl}about-images/gen1-first-gen-grad-team.jpg`} 
+                  alt="GEN1 First-Gen Grad Team" 
+                  className="w-full h-full object-cover rounded-2xl" 
+                />
               </div>
             </div>
           </div>
