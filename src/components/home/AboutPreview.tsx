@@ -21,6 +21,8 @@ const values = [
 ];
 
 export const AboutPreview = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <section className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,18 +71,37 @@ export const AboutPreview = () => {
             <div className="relative grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="h-40 rounded-2xl bg-lavender/30 flex items-center justify-center">
-                  <span className="text-6xl">🎓</span>
+                  <img 
+                    src={`${baseUrl}home-images/christypoker.jpeg`} 
+                    alt="Christy Poker" 
+                    className="w-full h-full object-cover rounded-2xl" 
+                    style={{ objectPosition: "50% 20%" }}
+                  />
                 </div>
                 <div className="h-56 rounded-2xl bg-coral/30 flex items-center justify-center">
-                  <span className="text-6xl">💻</span>
+                   <img 
+                    src={`${baseUrl}home-images/Pathways&Perspectives.jpg`} 
+                    alt="Professors at Pathways & Perspectives" 
+                    className="w-full h-full object-cover rounded-2xl" 
+                    style={{ objectPosition: "70% 0%" }}
+                  />
                 </div>
               </div>
               <div className="space-y-4 pt-8">
                 <div className="h-56 rounded-2xl bg-pink/30 flex items-center justify-center">
-                  <span className="text-6xl">🤝</span>
+                  <img 
+                    src={`${baseUrl}home-images/valentines.jpeg`} 
+                    alt="Valentines & Vibes craft event" 
+                    className="w-full h-full object-cover rounded-2xl" 
+                  />
                 </div>
                 <div className="h-40 rounded-2xl bg-gold/30 flex items-center justify-center">
-                  <span className="text-6xl">⭐</span>
+                  <img 
+                    src={`${baseUrl}home-images/poker-gordon.jpeg`} 
+                    alt="Gordon gambling" 
+                    className="w-full h-full object-cover rounded-2xl" 
+                    style={{ objectPosition: "30% 20%" }}
+                  />
                 </div>
               </div>
             </div>
