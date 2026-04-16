@@ -4,60 +4,101 @@ import { Calendar, MapPin, Clock, ExternalLink, Image } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
+const ongoingEvents = [
+  {
+    title: "Sip and Share",
+    time: "TBD",
+    location: "TBD",
+    description:
+      "We're excited to bring back Sip and Share with a new format this quarter. This is a dedicated space to connect with GEN1 officers, get advice on classes, internships, and navigating UW, and learn what it's like to be part of GEN1. Whether you're looking for guidance or just want to meet more people in the community, this is a great place to start.",
+    type: "Social",
+    flyer: "/public/event-images/sip-and-share.png",
+    rsvp: "https://docs.google.com/forms/d/e/1FAIpQLSdWJZY9oHejKXFHX6Nthka0WILWLg6DkhEPoBK1zV-4WUjMeQ/viewform?usp=header"
+  },
+  {
+    title: "GEN1torship",
+    time: "N/A",
+    location: "TBD",
+    description:
+      "GEN1torship is designed to connect first-generation undergraduate students with first-generation alumni mentors, creating a supportive space for learning, growth, and shared experience. Our mentors can offer insight on navigating UW as a first-gen student, pursuing careers in industry or research, and building confidence as you plan your next steps.",
+    type: "Social",
+    flyer: "/public/event-images/gen1torship.png",
+    rsvp: "https://docs.google.com/forms/d/e/1FAIpQLSfhcM7k5-yz1-9sMzJNPXem0ndouEbFXiJQI51fhchS6LOxGQ/viewform?usp=header"
+  },
+  {
+    title: "Crack the Eggs",
+    time: "N/A",
+    location: "N/A",
+    description:
+      "We're celebrating spring by hiding Easter eggs all around campus! Inside each egg? A QR code you can scan to claim prizes like Mariners merch 🧢, portable battery packs 🔋, plus more with a GRAND PRIZE dropping the last week (April 30th)!",
+    type: "Social",
+    flyer: "/public/event-images/crack-the-eggs.png",
+    rsvp: null
+  }
+]
+
 const upcomingEvents = [
   {
-    title: "First-Gen Week Kickoff",
-    date: "November 4, 2024",
-    time: "5:00 PM - 7:00 PM",
-    location: "Bill & Melinda Gates Center",
-    description:
-      "Join us to celebrate First-Generation College Student Week with food, networking, and fun activities!",
-    type: "Social",
-  },
-  {
-    title: "FAFSA Workshop",
-    date: "November 12, 2024",
-    time: "4:00 PM - 6:00 PM",
-    location: "CSE 003",
-    description:
-      "Get help filling out your FAFSA application with guidance from financial aid advisors.",
-    type: "Workshop",
-  },
-  {
-    title: "Resume Review Night",
-    date: "November 18, 2024",
+    title: "Amazon Jr. Dev Information Session",
+    date: "April 16, 2026",
     time: "6:00 PM - 8:00 PM",
-    location: "CSE 403",
+    location: "TBD",
     description:
-      "Bring your resume for personalized feedback from industry professionals and senior students.",
+      "GEN1 and other UW CS clubs are partnering with Amazon’s Jr. Developer Program to host an Information Session for UW students interested in a Software Development Engineering internship!",
     type: "Career",
+    flyer: "public/event-images/amazon-jr-dev.png",
+    rsvp: "https://uw.joinhandshake.com/stu/events/1928503"
   },
   {
-    title: "Tech Company Panel",
-    date: "December 2, 2024",
-    time: "5:30 PM - 7:30 PM",
-    location: "Gates Commons",
+    title: "Intern Panel",
+    date: "TBD",
+    time: "5:00 PM - 7:00 PM",
+    location: "TBD",
     description:
-      "Hear from first-gen professionals working at top tech companies about their career journeys.",
+      "",
     type: "Panel",
+    flyer: null,
+    rsvp: null
+  },
+  {
+    title: "First to Founder",
+    date: "May 13, 2026",
+    time: "5:00 PM - 7:00 PM",
+    location: "CSE2 G10",
+    description:
+      "",
+    type: "Panel",
+    flyer: null,
+    rsvp: null
+  },
+  {
+    title: "First Gen Grad",
+    date: "June 4, 2026",
+    time: "4:30 PM - 7:00 PM",
+    location: "Zillow Commons",
+    description:
+      "This will be a meaningful opportunity to celebrate the accomplishments of the Allen School first-generation community, and we would love for you to join us in recognizing and uplifting our graduates.",
+    type: "Social",
+    flyer: null,
+    rsvp: null
   },
 ];
 
 const pastEvents = [
   {
-    title: "Welcome Back BBQ",
-    date: "September 28, 2024",
+    title: "Badminton/Sports Day",
+    date: "April 11, 2026",
     type: "Social",
   },
   {
-    title: "Interview Prep Workshop",
-    date: "October 15, 2024",
+    title: "GEN1 x AVELA x ColorStack x MiT Duolingo Info Night",
+    date: "February 17, 2026",
     type: "Career",
   },
   {
-    title: "Mental Health & Wellness Panel",
-    date: "October 22, 2024",
-    type: "Panel",
+    title: "GEN1 x MiT x WiC x Q++ Valentines & Vibes",
+    date: "February 11, 2026",
+    type: "Social",
   },
 ];
 
@@ -93,6 +134,101 @@ const Events = () => {
           </div>
         </section>
 
+        {/* Ongoing/Yearly events */}
+        <section className="py-24 bg-secondary/50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mb-12">
+              <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+                Current
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
+                Ongoing Events
+              </h2>
+            </div>
+
+            <div className="grid gap-6">
+              {ongoingEvents.map((event) => (
+                <div
+                  key={event.title}
+                  className="p-6 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-lg transition-all"
+                >
+                  <div className="flex flex-col lg:flex-row gap-6">
+                    {/* Event Flyer */}
+                    <div className="lg:w-48 flex-shrink-0">
+                      <AspectRatio
+                        ratio={4 / 5}
+                        className="bg-muted rounded-xl border-2 border-dashed border-border overflow-hidden"
+                      >
+                        {event.flyer ? (
+                          <img
+                            src={event.flyer}
+                            alt={`${event.title} flyer`}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <div className="w-full h-full flex flex-col items-center justify-center text-muted-foreground">
+                            <Image className="w-10 h-10 mb-2" />
+                            <span className="text-xs text-center px-2">Event Flyer</span>
+                          </div>
+                        )}
+                      </AspectRatio>
+                    </div>
+                    
+                    <div className="flex-1 flex flex-col lg:flex-row lg:items-center gap-6">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-3">
+                          <span
+                            className={`px-3 py-1 rounded-full text-xs font-medium ${getTypeColor(
+                              event.type
+                            )}`}
+                          >
+                            {event.type}
+                          </span>
+                        </div>
+                        <h3 className="text-xl font-semibold text-foreground mb-2">
+                          {event.title}
+                        </h3>
+                        <p className="text-muted-foreground mb-4">
+                          {event.description}
+                        </p>
+                        <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+                          <div className="flex items-center gap-2">
+                            <Clock className="w-4 h-4" />
+                            {event.time}
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <MapPin className="w-4 h-4" />
+                            {event.location}
+                          </div>
+                        </div>
+                      </div>
+                        {event.rsvp ? (
+                          <a
+                            href={event.rsvp}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Button className="gradient-cta border-0 self-start lg:self-center">
+                              RSVP
+                              <ExternalLink className="ml-2 w-4 h-4" />
+                            </Button>
+                          </a>
+                        ) : (
+                          <Button
+                            disabled
+                            className="border-0 self-start lg:self-center opacity-50 cursor-not-allowed"
+                          >
+                            RSVP Unavailable
+                          </Button>
+                        )}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Upcoming Events */}
         <section className="py-24 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -114,11 +250,22 @@ const Events = () => {
                   <div className="flex flex-col lg:flex-row gap-6">
                     {/* Event Flyer Placeholder */}
                     <div className="lg:w-48 flex-shrink-0">
-                      <AspectRatio ratio={4 / 5} className="bg-muted rounded-xl border-2 border-dashed border-border overflow-hidden">
-                        <div className="w-full h-full flex flex-col items-center justify-center text-muted-foreground">
-                          <Image className="w-10 h-10 mb-2" />
-                          <span className="text-xs text-center px-2">Event Flyer</span>
-                        </div>
+                      <AspectRatio
+                        ratio={4 / 5}
+                        className="bg-muted rounded-xl border-2 border-dashed border-border overflow-hidden"
+                      >
+                        {event.flyer ? (
+                          <img
+                            src={event.flyer}
+                            alt={`${event.title} flyer`}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <div className="w-full h-full flex flex-col items-center justify-center text-muted-foreground">
+                            <Image className="w-10 h-10 mb-2" />
+                            <span className="text-xs text-center px-2">Event Flyer</span>
+                          </div>
+                        )}
                       </AspectRatio>
                     </div>
                     
@@ -154,10 +301,25 @@ const Events = () => {
                           </div>
                         </div>
                       </div>
-                      <Button className="gradient-cta border-0 self-start lg:self-center">
-                        RSVP
-                        <ExternalLink className="ml-2 w-4 h-4" />
-                      </Button>
+                      {event.rsvp ? (
+                        <a
+                          href={event.rsvp}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Button className="gradient-cta border-0 self-start lg:self-center">
+                            RSVP
+                            <ExternalLink className="ml-2 w-4 h-4" />
+                          </Button>
+                        </a>
+                      ) : (
+                        <Button
+                          disabled
+                          className="border-0 self-start lg:self-center opacity-50 cursor-not-allowed"
+                        >
+                          RSVP Unavailable
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </div>
