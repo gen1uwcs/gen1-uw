@@ -32,20 +32,6 @@ const leaders = [
     email: "deetyk@cs.washington.edu"
   },
   {
-    name: "Raghavi Putluri",
-    image: "Raghavi.png",
-    role: "Secretary",
-    pronouns: "she/her",
-    major: "Computer Science",
-    year: "Senior",
-    favClass: "CSE 331",
-    favLang: "Python",
-    askAbout: "Study spots @ UW",
-    funFact: "Dream Travel Destination: Barcelona",
-    linkedIn: "raghavi-putluri",
-    email: "raghavip@cs.washington.edu"
-  },
-  {
     name: "Krish Doshi",
     image: "Krish.png",
     role: "Student Relations",
@@ -285,35 +271,6 @@ const Leadership = () => {
                         </a>
                       )}
                     </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Club Photos Section */}
-        <section className="py-24 bg-secondary/30">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12 text-center">
-              GEN1 in Action
-            </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div
-                  key={i}
-                  className="aspect-[4/3] rounded-2xl bg-secondary border border-border flex items-center justify-center overflow-hidden group hover:shadow-lg transition-all"
-                >
-                  <div className="text-center p-8">
-                    <div className="w-16 h-16 rounded-full bg-lavender/30 flex items-center justify-center mx-auto mb-4">
-                      <User className="w-8 h-8 text-primary/50" />
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      Club Photo {i}
-                    </p>
-                    <p className="text-xs text-muted-foreground/70 mt-1">
-                      Upload to replace
-                    </p>
                   </div>
                 </div>
               ))}
