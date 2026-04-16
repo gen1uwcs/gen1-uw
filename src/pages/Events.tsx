@@ -4,6 +4,13 @@ import { Calendar, MapPin, Clock, ExternalLink, Image } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
+const flyers = {
+  sipAndShare: `event-images/sip-and-share.png`,
+  gen1torship: `event-images/gen1torship.png`,
+  crackTheEggs: `event-images/crack-the-eggs.png`,
+  amazonJrDev: `event-images/amazon-jr-dev.png`,
+};
+
 const ongoingEvents = [
   {
     title: "Sip and Share",
@@ -12,7 +19,7 @@ const ongoingEvents = [
     description:
       "We're excited to bring back Sip and Share with a new format this quarter. This is a dedicated space to connect with GEN1 officers, get advice on classes, internships, and navigating UW, and learn what it's like to be part of GEN1. Whether you're looking for guidance or just want to meet more people in the community, this is a great place to start.",
     type: "Social",
-    flyer: "/public/event-images/sip-and-share.png",
+    flyer: flyers.sipAndShare,
     rsvp: "https://docs.google.com/forms/d/e/1FAIpQLSdWJZY9oHejKXFHX6Nthka0WILWLg6DkhEPoBK1zV-4WUjMeQ/viewform?usp=header"
   },
   {
@@ -22,7 +29,7 @@ const ongoingEvents = [
     description:
       "GEN1torship is designed to connect first-generation undergraduate students with first-generation alumni mentors, creating a supportive space for learning, growth, and shared experience. Our mentors can offer insight on navigating UW as a first-gen student, pursuing careers in industry or research, and building confidence as you plan your next steps.",
     type: "Social",
-    flyer: "/public/event-images/gen1torship.png",
+    flyer: flyers.gen1torship,
     rsvp: "https://docs.google.com/forms/d/e/1FAIpQLSfhcM7k5-yz1-9sMzJNPXem0ndouEbFXiJQI51fhchS6LOxGQ/viewform?usp=header"
   },
   {
@@ -32,7 +39,7 @@ const ongoingEvents = [
     description:
       "We're celebrating spring by hiding Easter eggs all around campus! Inside each egg? A QR code you can scan to claim prizes like Mariners merch 🧢, portable battery packs 🔋, plus more with a GRAND PRIZE dropping the last week (April 30th)!",
     type: "Social",
-    flyer: "/public/event-images/crack-the-eggs.png",
+    flyer: flyers.crackTheEggs,
     rsvp: null
   }
 ]
@@ -46,7 +53,7 @@ const upcomingEvents = [
     description:
       "GEN1 and other UW CS clubs are partnering with Amazon’s Jr. Developer Program to host an Information Session for UW students interested in a Software Development Engineering internship!",
     type: "Career",
-    flyer: "public/event-images/amazon-jr-dev.png",
+    flyer: flyers.amazonJrDev,
     rsvp: "https://uw.joinhandshake.com/stu/events/1928503"
   },
   {
